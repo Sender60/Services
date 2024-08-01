@@ -1,6 +1,11 @@
 @import url(header.css);
 @import url(main.css);
-@import url(fonts/stylesheet.css);
+/* @import url(fonts/stylesheet.css); */
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.woff');
+}
 
 body {
   background-color: #f8f8f8;
