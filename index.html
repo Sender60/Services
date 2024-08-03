@@ -8,50 +8,63 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <div class="main">
+    <div class="container">
       <header class="header">
-        <img class="burger" src="public/images/burger.svg" /><div class="stick"></div>
-        <a href="#" class="logo"><img src="public/images/logo.svg" /></a>
-        <img class="phone" src="public/images/phone.svg" />
-        <img class="chat" src="public/images/chat.svg" />
-        <img class="profile" src="public/images/profile.svg" />
-        <div class="stick"></div><img class="repair" src="public/images/repair.svg" />
-        <img class="checkstatus" src="public/images/checkstatus.svg" />
+        <a href="#" class="header__burger icon-action">
+          <img src="public/images/burger.svg" alt="Бургер-меню" />
+        </a>
+        <div class="header__stick"></div>
+        <a href="#" class="header__logo">
+          <img src="public/images/logo.svg" alt="Логотип" />
+        </a>
+        <a href="#" class="header__phone icon-action">
+          <img src="public/images/phone.svg" alt="Телефон" />
+        </a>
+        <a href="#" class="header__chat icon-action">
+          <img src="public/images/chat.svg" alt="Чат" />
+        </a>
+        <a href="#" class="header__profile icon-action">
+          <img src="public/images/profile.svg" alt="Профиль" />
+        </a>
+        <div class="header__stick"></div>
+        <a href="#" class="header__repair icon-action">
+          <img src="public/images/repair.svg" alt="Ремонт" />
+        </a>
+        <a href="#" class="header__checkstatus icon-action">
+          <img src="public/images/checkstatus.svg" alt="Проверка статуса" />
+        </a>
       </header>
       <main>
         <div class="content">
           <div class="content__title-wrapper">
             <h1 class="content__title">Услуги и сервисы</h1>
             <div class="content__title-icon">
-              <label for="repair">Оставить заявку</label><img class="repair" id="repair" src="public/images/repair.svg" />
-              <label for="checkstatus">Статус ремонта</label><img id="checkstatus" class="checkstatus" src="public/images/checkstatus.svg" />
+              <a href="#" class="header__repair icon-action"><span>Оставить заявку</span><img src="public/images/repair.svg" /></a>
+              <a href="#" class="header__checkstatus icon-action"><span>Статус ремонта</span><img src="public/images/checkstatus.svg" /></a>
             </div>
           </div>
-          <nav>
-            <ul class="content__list">
-              <li class="content__list-item active">Ремонтируемые бренды</li>
-              <li class="content__list-item">Ремонтируемые устройства</li>
-              <li class="content__list-item">Цены на услуги</li>
-              <li class="content__list-item">Адреса сервисных центров</li>
-              <li class="content__list-item">Специальные цены</li>
-              <li class="content__list-item">Отзывы</li>
-            </ul>
-          </nav>
+          <ul class="content__list">
+            <a href="#" class="content__list-item active"><li>Ремонтируемые бренды</li></a>
+            <a href="#" class="content__list-item"><li>Ремонтируемые устройства</li></a>
+            <a href="#" class="content__list-item"><li>Цены на услуги</li></a>
+            <a href="#" class="content__list-item"><li>Адреса сервисных центров</li></a>
+            <a href="#" class="content__list-item"><li>Специальные цены</li></a>
+            <a href="#" class="content__list-item"><li>Отзывы</li></a>
+          </ul>
           <section class="content__info">
             <div>
               <p class="content__info-text">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя. <br><br> Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
               </p>
-              <div class="content__info-read-button">
+              <a href="#" class="content__info-read-button">
                 <img src="public/images/readNext.svg">
                 <h4>Читать далее</h3>
-              </div>
+              </a>
             </div>
-            <img class="content__info-image" src="public/images/board.jpeg" alt="Вывеска" />
+            <img class="content__info-image" src="public/images/board.jpg" alt="Вывеска" />
           </section>
         </div>
       </main>
-      <footer class="footer">
     </div>
   </body>
 </html>
