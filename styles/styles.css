@@ -60,17 +60,14 @@ a:hover {
   font-weight: bold;
 }
 
-.header__profile,
-.header__phone,
-.header__chat {
+.header__wrapper {
   display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
-  .header__profile,
-  .header__phone,
-  .header__chat {
-    display: block;
+  .header__wrapper {
+    display: flex;
+    gap: 20px;
   }
 
   .header__stick:nth-child(2) {
