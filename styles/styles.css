@@ -7,6 +7,7 @@
   --active-color: #41f6d7;
   --active-color-text: #7e7e82;
   --focus-color-text: #ff3e79;
+  --border-color: #eaeaea;
   --header-height: 88px;
 }
 
@@ -39,7 +40,7 @@ a:hover {
 .header__stick {
   width: 2px;
   height: 32px;
-  background-color: #eaeaea;
+  background-color: var(--border-color);
 }
 
 .header__stick:nth-child(2) {
@@ -160,16 +161,9 @@ main {
   width: 132px;
 }
 
-.content__info-read-button:hover::after {
-  content: '';
-  position: absolute;
-  top: 75%;
-  left: 0%;
-  width: 130px;
-  height: 2px;
-  background-color: black;
-  transform: translateY(-50%);
-  border-radius: 35%;
+.content__info-read-button:hover {
+  transition: color 0.2s ease;
+  color: var(--focus-color-text);
 }
 
 .content__info div {
@@ -252,7 +246,7 @@ ul {
   width: 320px;
   height: 100vh;
   background-color: white;
-  border-right: 1px solid #eaeaea;
+  border-right: 1px solid var(--border-color);
   box-shadow: -2px 0 4px rgba(69, 79, 126, 0.02), 16px 0 52px rgba(14, 24, 80, 0.2);
   overflow-y: auto;
 }
@@ -319,8 +313,18 @@ ul {
   gap: 5px;
 }
 
+.sidebar-footer__mail:hover {
+  transition: color 0.2s ease;
+  color: var(--focus-color-text);
+}
+
 .sidebar-footer__contact {
   font-weight: bold;
+}
+
+.sidebar-footer__contact:hover {
+  transition: color 0.2s ease;
+  color: var(--focus-color-text);
 }
 
 .sidebar-footer__language-item {
@@ -329,10 +333,55 @@ ul {
 }
 
 .sidebar-footer__language-item:hover {
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
   color: var(--focus-color-text);
 }
 
 .language-active {
   color: var(--active-color-text);
+}
+
+/* brends */
+
+.block-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 56px;
+  height: 56px;
+  padding: 0px 20px;
+  background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff 100%);
+}
+
+.brends__list {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
+  margin-left: 20px;
+  border: 1px solid red;
+
+  height: 165px;
+  overflow: hidden;
+}
+
+.brends__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0 20px;
+  background-color: white;
+  height: 72px;
+}
+
+.brends__read-button {
+  display: flex;
+  width: fit-content;
+  margin-left: 20px;
+}
+
+.brends__read-button:hover {
+  transition: color 0.2s ease;
+  color: var(--focus-color-text);
 }
