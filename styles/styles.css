@@ -255,7 +255,7 @@ ul {
   overflow-y: auto;
 }
 
-.aside > *:not(.sidebar-header) {
+.aside > *:not(.sidebar__header) {
   margin-left: 20px;
 }
 
