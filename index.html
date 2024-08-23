@@ -6,6 +6,10 @@
     <title>Services</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -14,7 +18,7 @@
           <img src="public/images/burger.svg" alt="Бургер-меню" />
         </a>
         <div class="header__stick"></div>
-        <a href="#" class="header__logo">
+        <a href="#" class="logo">
           <img src="public/images/logo.svg" alt="Логотип" />
         </a>
         <div class="header__wrapper">
@@ -72,48 +76,84 @@
         </div>
         <section class="brends">
           <h3 class="brends__title block-title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h3>
-          <ul class="brends__list">
-            <li class="brends__list-item">
-              <img src="public/images/brends/acer.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item">
-              <img src="public/images/brends/apple.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/lenovo.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/bosch.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/hp.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/samsung.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/sony.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/viewSonic.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/bosch.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/lenovo.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-            <li class="brends__list-item"> 
-              <img src="public/images/brends/samsung.svg" alt="лого">
-              <img src="public/images/goNext.svg" alt="подробнее"></li>
-          </ul>
+          <section id="brend-slider">
+            <ul class="brends__list">
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item">
+                  <img src="public/images/brends/acer.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item">
+                  <img src="public/images/brends/apple.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/lenovo.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/bosch.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/hp.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/samsung.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/sony.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/viewSonic.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/bosch.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/lenovo.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+              <li class="brend-slider__slide swiper-slide">
+                <div class="brends__list-item"> 
+                  <img src="public/images/brends/samsung.svg" alt="лого">
+                  <img src="public/images/goNext.svg" alt="подробнее">
+                </div>
+              </li>
+            </ul>
+            <div class="brend-slider__pagination swiper-pagination"></div>
+          </section>
           <a href="#" class="brends__read-button">
-            <img src="public/images/readNext.svg">
+            <img class="brends__read-button-icon" src="public/images/readNext.svg">
             <h4>Показать все</h3>
           </a>
         </section>
       </main>
     </div>
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>

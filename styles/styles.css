@@ -58,7 +58,10 @@ address {
     rgba(255, 255, 255, 0.6) 100%
   );
 }
+
 .icon-action:hover span {
+  transition: color 0.3s ease;
+  color: var(--focus-color-text);
   font-weight: bold;
 }
 
@@ -368,9 +371,7 @@ ul {
 }
 
 .brends__read-button {
-  display: flex;
-  width: fit-content;
-  margin-left: 20px;
+  display: none;
 }
 
 .brends__read-button:hover {
@@ -389,10 +390,31 @@ ul {
     height: 165px;
     overflow: hidden;
   }
+
+  .brends__read-button {
+    display: flex;
+    width: fit-content;
+    margin-left: 20px;
+  }
 }
 
 @media (min-width: 1120px) {
   .brends__list {
     grid-template-columns: repeat(4, 224px);
   }
+}
+
+/* Свайпер */
+
+.swiper {
+  width: 300px;
+  height: 110px;
+}
+
+.brend-slider__pagination .swiper-pagination-bullet-active {
+  background-color: #a2a3a8;
+}
+
+.brend-slider__pagination .swiper-pagination-bullet {
+  background-color: #c0bfbf;
 }
