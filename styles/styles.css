@@ -348,18 +348,19 @@ ul {
   color: var(--active-color-text);
 }
 
-/* brends */
+/* brands */
 
-.block-title {
+.brands__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 56px;
   height: 56px;
   padding: 0px 20px;
+  text-transform: uppercase;
   background-image: linear-gradient(to right, #f8f8f8 0%, #ffffff 100%);
 }
 
-.brends__list-item {
+.brands__list-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -370,36 +371,57 @@ ul {
   height: 72px;
 }
 
-.brends__read-button {
+.brands__read-button {
   display: none;
 }
 
-.brends__read-button:hover {
+.brands__read-button:hover {
   transition: color 0.2s ease;
   color: var(--focus-color-text);
 }
 
 @media (min-width: 768px) {
-  .brends__list {
+  .brands__list {
     display: grid;
     grid-template-columns: repeat(3, 224px);
     grid-column-gap: 20px;
     grid-row-gap: 15px;
     margin-left: 20px;
+    padding-top: 5px;
 
-    height: 165px;
+    height: 175px;
     overflow: hidden;
   }
 
-  .brends__read-button {
+  .brands__list--visible {
+    height: auto;
+    overflow: visible;
+  }
+
+  .brands__read-button {
     display: flex;
     width: fit-content;
     margin-left: 20px;
   }
+
+  .brands__read-button-text {
+    font-weight: bold;
+    margin: 1em auto;
+  }
+
+  .brands__list-item:hover {
+    box-shadow: 0px 13px 15px -10px rgba(34, 60, 80, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    transform: translateY(-3px);
+  }
+
+  .brands__list-item:not(:hover) {
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
 }
 
 @media (min-width: 1120px) {
-  .brends__list {
+  .brands__list {
     grid-template-columns: repeat(4, 224px);
   }
 }
@@ -407,14 +429,14 @@ ul {
 /* Свайпер */
 
 .swiper {
-  width: 300px;
+  width: 80%;
   height: 110px;
 }
 
-.brend-slider__pagination .swiper-pagination-bullet-active {
+.brand-slider__pagination .swiper-pagination-bullet-active {
   background-color: #a2a3a8;
 }
 
-.brend-slider__pagination .swiper-pagination-bullet {
+.brand-slider__pagination .swiper-pagination-bullet {
   background-color: #c0bfbf;
 }
